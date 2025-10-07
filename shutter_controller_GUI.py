@@ -10,6 +10,7 @@ class App(tk.Tk):
 
         self.protocol("WM_DELETE_WINDOW")
         self.resizable(width=False, height=False)
+        self.title("Shutter Controller")
 
         ConnectScreen(self)
 
