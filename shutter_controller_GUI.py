@@ -112,7 +112,7 @@ class MainWindow(tk.Frame):
         self.after(500, self.get_shutter_status)
 
     def expose_button(self):
-        exposure_time = int(self.timed_exposure.get())
+        exposure_time = float(self.timed_exposure.get())
         time_unit = self.timed_exposure_time_unit.get()
 
         self.shutter_controller.timed_exposure(exposure_time, time_unit)
